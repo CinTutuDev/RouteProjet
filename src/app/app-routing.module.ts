@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'hello/:name', component: HelloComponent },
+  /* "wildcard"/"comodín" se utiliza para manejar rutas que no coinciden en la que saco msg de error, se deben poner al final  */
   { path: '**', component: ErrorComponent },
 ];
 
